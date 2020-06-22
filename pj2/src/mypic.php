@@ -97,13 +97,9 @@
                 $pic1 = new randomPic();
                 $pic2 = new randomPic();
                 $pic3 = new randomPic();
-                $allPicNumbers = $pic1->getTotalPicNumbers();
-                $id1 = rand(1,round($allPicNumbers/3));
-                $id2 = rand(round($allPicNumbers/3),round($allPicNumbers/3*2));
-                $id3 = rand(round($allPicNumbers/3*2),$allPicNumbers-1);
-                $pic1->setPicId($id1);
-                $pic2->setPicId($id2);
-                $pic3->setPicId($id3);
+                $pic1->setPicId($pic1->generateRandomID());
+                $pic2->setPicId($pic2->generateRandomID());
+                $pic3->setPicId($pic3->generateRandomID());
                 $pic1->anotherDemoPic();
                 $pic2->anotherDemoPic();
                 $pic3->anotherDemoPic();
