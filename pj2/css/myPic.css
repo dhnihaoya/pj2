@@ -1,0 +1,36 @@
+.container{
+    margin-top: 10px;
+    margin-left: 0;
+}
+.panel{
+    margin-left: 10px;
+    margin-right: 15%;
+}
+h2{
+    margin-left: 15px;
+}
+.clearing-thumbs{
+    margin-left: 50px;
+}
+.inline-list{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    height: 40px;
+    vertical-align: center;
+    background-color: rgba(228,223,223,0.88);
+    padding-top: 10px;
+}
+#pageNumber{
+    margin-left: 48%;
+}
+.panel-default{
+    padding: 0px;
+    margin: 15px;
+}
+.panel{
+    overflow: auto;
+}
+.container{
+    float: right;
+}

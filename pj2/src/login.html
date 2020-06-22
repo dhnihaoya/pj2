@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" id="style" class="daytime" href="../css/daytime.css">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">你好 世界</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="browser.php"><span class="glyphicon glyphicon-plane"></span> 浏览</a></li>
+                <li><a href="../home.php"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        页面风格 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li id="daytime" style="text-align: center">日间模式</li>
+                        <li class="divider"></li>
+                        <li id="nighttime" style="text-align: center">夜间模式</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <img src="../pics/index.jpeg" alt="登陆图片">
+</div>
+<h1 id="headline">登陆</h1>
+
+
+
+<form name= "information" action="../php/login.php" role="form" method="post">
+
+    <p class="tag">用户名</p>
+    <div class="input-group">
+        <span class="glyphicon glyphicon-user input-group-addon"></span>
+        <input type="text" placeholder="your ID here" required id="id" name="id" class="form-control">
+    </div>
+    </p>
+
+
+    <p class="tag">密码</p>
+    <div class="input-group">
+        <span class="glyphicon glyphicon-barcode input-group-addon"></span>
+        <input type="password" placeholder="your password here" required id="password" name="password" class="form-control">
+        <span class="input-group-addon glyphicon glyphicon-eye-close" id="demo"></span>
+    </div>
+    </p>
+    <div style="text-align: center">
+        <input type="submit" value="登陆" class="login">
+    </div>
+</form>
+
+
+<footer>
+    <p> 19302010002 丁昊 湖人总冠军</p>
+</footer>
+
+
+
+<script src="../javascript/jquery.js"></script>
+<script src="../javascript/index.js"></script>
+<script src="../javascript/navbar.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

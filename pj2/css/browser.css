@@ -1,0 +1,35 @@
+#left{
+    margin-left: 10px;
+}
+#filter{
+    margin-right: 18px;
+}
+button{
+    margin: 5px;
+}
+
+#hotCountry{
+    padding: 0;
+}
+
+#hotCity{
+    padding: 0;
+}
+td{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    padding: 5px;
+}
+td img{
+    padding: 5px;
+    width: 90%;
+    height: 90%;
+}
+#picResultBar{
+    margin-right: 18px;
+}
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
