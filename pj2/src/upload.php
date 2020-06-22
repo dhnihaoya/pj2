@@ -45,7 +45,7 @@ require ("../php/upload.php");
             <div id="preview" style="width:320px;height:240px;"></div><!--用来放预览图片的DIV-->
             <div id="insertPic"></div>
                 <fieldset>
-                    <form action="../php/uploadPic.php" method="POST" enctype="multipart/form-data" role="form" onsubmit="return isUplod()">
+                    <form action="../php/uploadPic.php" method="POST" enctype="multipart/form-data" role="form" >
                     <legend><i class="fi-upload"></i>  上传</legend>
                     <label>
                         <input type="file" onchange="previewImage(this,320,240)" accept="image/*" name="pic" id="pic" required />
@@ -93,10 +93,6 @@ require ("../php/upload.php");
 
     </div>
 </div>
-
-
-
-
 
 
 

@@ -38,7 +38,7 @@
             $arrOfFavoredNumbers[$i] = $j;
 
         }
-        print_r($arrOfFavoredNumbers);
+        //print_r($arrOfFavoredNumbers);
         $pdo = null;
         return $arrOfFavoredNumbers;
     }

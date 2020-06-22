@@ -35,21 +35,16 @@ function modifyPic(btnId){
     var Title = $('h2','#'+divId).val();
     var description = $('p','#'+divId).val();
     var expTime = new Date().getTime() + 60*1000;
-    document.cookie = "picId="+ divId +"; expires="+expTime+"; path=/pj2/";
-    document.cookie = "picSrc="+ src +"; expires="+expTime+"; path=/pj2/";
+    document.cookie = "picToModId="+ divId +"; expires="+expTime+"; path=/pj2/";
+    document.cookie = "picToModSrc="+ src +"; expires="+expTime+"; path=/pj2/";
+    document.cookie = "picToModTitle="+Title+"; expires="+expTime+"; path=/pj2/";
+    document.cookie = "picToModDes=" + description+";expires="+expTime+"; path=/pj2/";
+    document.cookie = "uploadStatus=" + 1 +";expires="+expTime+"; path=/pj2/";
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
         {
-           window.location.href = "../src/upload.php";
-           $('#Title').val(Title);
-           $('#button').val('修改');
-           $('#Description').val(description);
-           document.getElementById('insertPic').innerHTML=
-               "<img src ="+src+">";
-           $('#'+xmlhttp.responseText).attr({
-               'selected' : 'true',
-           })
+            window.location.href = '../src/picDetail.php';
         }
     };
     xmlhttp.open("POST","/pj2/php/modifyPic.php",true);

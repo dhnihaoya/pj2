@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <!--最左小标题 -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">旅游</a>
+            <a class="navbar-brand" href="#">你好 世界</a>
         </div>
         <!--左侧两个小标题-->
         <div>

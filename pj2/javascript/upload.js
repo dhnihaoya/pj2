@@ -55,12 +55,6 @@ function clacImgZoomParam(maxWidth, maxHeight, width, height){
     return param;
 }
 
-function isUpload() {
-    var expTime = new Date().getTime() + 10*60*100;
-    document.cookie = "uploadStatus="+ 1 +"; expires="+expTime+"; path=/pj2/";
-    return true;
-}
-
 
 
 

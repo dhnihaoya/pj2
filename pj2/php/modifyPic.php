@@ -9,5 +9,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 $category = $result['Category'];
+$expiryTime = time()+600;
+setcookie('picToModCat',$category ,$expiryTime, '/pj2/' );
 
-echo $category;
+//echo $category;
